@@ -1,4 +1,4 @@
-version: '3'
+version: '3.1'
 
 services:
   api:
@@ -11,9 +11,9 @@ services:
   database:
     image: mysql:latest
     environment:
-      - MYSQL_ROOT_PASSWORD = A1245784512
-      - MYSQL_DATABASE = noteData
-      - MYSQL_USER = root
-      - MYSQL_PASSWORD = password
+      MYSQL_ROOT_PASSWORD: A1245784512
+      MYSQL_DATABASE: noteData
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
