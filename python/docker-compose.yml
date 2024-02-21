@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - database
+
+  database:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD = A1245784512
+      - MYSQL_DATABASE = noteData
+    ports:
+      - "3306:3306"
