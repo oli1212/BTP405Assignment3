@@ -11,7 +11,9 @@ services:
   database:
     image: mysql:latest
     environment:
-      - MYSQL_ROOT_PASSWORD = A1245784512
-      - MYSQL_DATABASE = noteData
+      MYSQL_ROOT_PASSWORD = A1245784512
+      MYSQL_DATABASE = noteData
+      MYSQL_USER = root
+      MYSQL_PASSWORD = password
     ports:
       - "3306:3306"
