@@ -2,7 +2,7 @@
 FROM python:3.11-slim
 
 # Create the work directory
-WORKDIR /usr/src/app
+WORKDIR /app
 
 # Copy all code to Docker image
 COPY . /app
